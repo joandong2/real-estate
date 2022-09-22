@@ -5,7 +5,7 @@ const Header = () => {
     <section id="header">
       <div className="container mx-auto flex justify-between mt-6 mb-10">
         <div>
-          <h1>Logo</h1>
+          <h1 className="font-dancing text-red-500 text-3xl">estates</h1>
         </div>
         <div className="flex justify-between align-middle">
           <ul className="flex space-x-4 align-middle mt-2">

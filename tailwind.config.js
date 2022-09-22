@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'roboto': ['roboto', 'sans-serif'],
+      'dancing': ['Dancing Script', 'sans-serif']
     },
     screens: {
       sm: '480px',
