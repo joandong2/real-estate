@@ -1,0 +1,23 @@
+{
+    "properties": [
+      {
+        "id": "1",
+        "name": "John Oblenda",
+        "email": "johnoblenda@gmail.com"
+      }
+    ],
+    "agents": [
+      {
+        "id": "1",
+        "name": "John Oblenda",
+        "email": "johnoblenda@gmail.com",
+        "address": "New Jersey"
+      },
+      {
+        "id": "2",
+        "name": "Joanne Oblenda",
+        "email": "joanneoblenda@gmail.com",
+        "address": "New Jersey"
+      }
+    ]
+  }
