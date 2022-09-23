@@ -24,14 +24,27 @@ a {
 }
 
 #header {
-    background-image: url('./images/house-1867187_1920.jpg');
-    min-height: 600px;
+    min-height: 400px;
     position: relative;
+}
+
+.bg-image {
+    background: url('./images/chairs-2181947_1280.jpg')no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
 .overlay {
     background-color: transparent;
-    background-image: linear-gradient(180deg, rgba(0, 66, 116, 0.35) 0%, #004274 100%);
+    /* background-image: linear-gradient(180deg, rgba(0, 66, 116, 0.35) 0%, #004274 100%); */
+    background-image: linear-gradient( 180deg, rgba(246,71,71, 0.35) 0%, #f87171 100% );
     opacity: 1;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     height: 100%;
@@ -39,4 +52,19 @@ a {
     top: 0;
     left: 0;
     position: absolute;
+}
+
+.hero-boxes {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(242, 41, 91, 0) 100%);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.hero-boxes:hover {
+    -webkit-box-shadow: 0 70px 70px rgb(0 0 0 / 20%);
+    box-shadow: 0 70px 70px rgb(0 0 0 / 20%);
+    -webkit-transform: translate(0,-10px);
+    -ms-transform: translate(0,-10px);
+    transform: translate(0,-10px);
 }
