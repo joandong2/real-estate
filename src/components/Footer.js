@@ -12,7 +12,7 @@ from 'react-icons/ai';
 const Footer = () => {
   return (
     <>
-      <section id="footer" className="bg-black text-white">
+      <section id="footer" className="bg-lightBlack text-white">
         <div className="container mx-auto flex justify-between align-middle py-8 space-x-6">
           <div className="min-w-[25%]">
             <h3>About Us</h3>
@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <section id="footer-copy" className="bg-slate-700">
+      <section id="footer-copy" className="bg-black">
         <div className="flex justify-between columns-3 mx-auto container py-4 text-white">
           <div>&copy; Estates - All Rights Reserved.</div>
           <div>
@@ -43,9 +43,9 @@ const Footer = () => {
           </div>
           <div>
             <ul className="flex space-x-2 text-lg">
-              <li><a href="#" className="text-white"><AiFillFacebook /></a></li>
-              <li><a href="#" className="text-white"><AiFillTwitterCircle /></a></li>
-              <li><a href="#" className="text-white"><AiFillInstagram /></a></li>
+              <li><a href="/" className="text-white"><AiFillFacebook /></a></li>
+              <li><a href="/" className="text-white"><AiFillTwitterCircle /></a></li>
+              <li><a href="/" className="text-white"><AiFillInstagram /></a></li>
             </ul>
           </div>
         </div>

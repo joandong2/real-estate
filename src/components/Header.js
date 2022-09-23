@@ -6,7 +6,7 @@ const Header = () => {
       <section id="header">
         <div className="bg-image"></div>
         <div className="overlay"></div>
-        <div className="container mx-auto flex justify-between pt-4 mb-10 relative">
+        <div className="container mx-auto flex justify-between pt-4 mb-10 relative flex-col md:flex-row">
           <div>
             <h1 className="font-dancing text-white text-4xl">Real-estate</h1>
           </div>
@@ -26,7 +26,7 @@ const Header = () => {
         </div>
       </section>
       <section id="hero" className="bg-red-400 pb-20">
-        <div className="columns-3 flex container mx-auto justify-center align-middle space-x-3"> 
+        <div className="columns-3 flex container mx-auto justify-center align-middle space-x-3 text-center"> 
           <div className="hero-boxes p-4 bg-transparent text-white">
             <h4>Easy to access</h4>
             <p className="mb-4">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.</p>

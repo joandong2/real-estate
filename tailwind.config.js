@@ -4,6 +4,11 @@ module.exports = {
     require('tw-elements/dist/plugin')
   ],
   theme: {
+    extend: {
+      colors: {
+        lightBlack: '#5c5c5c',
+      },
+    },
     fontFamily: {
       'roboto': ['roboto', 'sans-serif'],
       'dancing': ['Dancing Script', 'sans-serif']

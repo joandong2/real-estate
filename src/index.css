@@ -23,7 +23,8 @@ a {
     color: blue
 }
 
-#header {
+#header,
+#callback1 {
     min-height: 400px;
     position: relative;
 }
@@ -54,6 +55,27 @@ a {
     position: absolute;
 }
 
+.overlay-light {
+    background-color: rgba(248,113,113, 0.35);
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.overlay-light2 {
+    background-color: rgba(109, 107, 107, 0.35);
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+
 .hero-boxes {
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(242, 41, 91, 0) 100%);
     -webkit-transition: 0.2s;
@@ -61,10 +83,53 @@ a {
     transition: 0.2s;
 }
 
-.hero-boxes:hover {
+.hero-boxes2 {
+    background-color: rgba(248,113,113, 0.75);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.hero-boxes:hover,
+.hero-boxes2:hover {
     -webkit-box-shadow: 0 70px 70px rgb(0 0 0 / 20%);
     box-shadow: 0 70px 70px rgb(0 0 0 / 20%);
     -webkit-transform: translate(0,-10px);
     -ms-transform: translate(0,-10px);
     transform: translate(0,-10px);
 }
+
+.custom-img {
+    background-image: url("./images/francesca-tosolini-XcVm8mn7NUM-unsplash.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.whole-bg {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+} 
+
+.whole-bg:hover .overlay-light2 {
+    opacity: 0
+}
+
+.apartment { background-image: url("./images/wall-416060_640.jpg"); }
+.multi {background-image: url("./images/large-home-389271_640.jpg");}
+.single {background-image: url("./images/house-1836070_1280.jpg");}
+.office {background-image: url("./images/chairs-2181960_640.jpg");}
+.shop {background-image: url("./images/building-66789_640.jpg");}
+.studio {background-image: url("./images/bedroom-527645_640.jpg");}
+.condo {background-image: url("./images/living-room-2155353_640.jpg");}
+.lot {background-image: url("./images/lawn-768316_640.jpg");}
