@@ -2,6 +2,7 @@ import './App.css';
 import Layout from './components/Layout';
 import Home from './components/Home'
 import { Routes, Route, Navigate } from 'react-router-dom';
+import SingleProperty from './components/SingleProperty';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
 
         <Route path="/">
           <Route index element={<Home/>} />
+          <Route path="property/:postId" element={<SingleProperty />} />
         </Route>
 
         <Route path="*" element={<Navigate to="/" replace />} />

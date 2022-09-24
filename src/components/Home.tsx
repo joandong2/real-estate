@@ -5,7 +5,7 @@ import { BiHelpCircle } from 'react-icons/bi';
 
 import image1 from '../images/jurica-koletic-7YVZYZeITc8-unsplash.jpg'
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <>
       <section id="featured-homes" className="bg-white">

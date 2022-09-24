@@ -9,7 +9,7 @@ import {
   AiFillInstagram } 
 from 'react-icons/ai';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <>
       <section id="clients" className="border-t-[1px]">

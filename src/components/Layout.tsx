@@ -4,7 +4,7 @@ import Header from './Header'
 import Footer from './Footer'
 
 // represents all the children of the layout
-const Layout = () => {
+const Layout: React.FC = () => {
   return (
     <>
       <Header />
