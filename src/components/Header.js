@@ -8,7 +8,7 @@ const Header = () => {
         <div className="overlay"></div>
         <div className="container mx-auto flex justify-between pt-4 mb-10 relative flex-col md:flex-row">
           <div>
-            <h1 className="font-dancing text-white text-4xl">Real-estate</h1>
+            <h1 className="font-dancing text-white text-4xl">real-estate</h1>
           </div>
           <div className="flex justify-between align-middle">
             <ul className="flex space-x-4 align-middle mt-4">
@@ -21,7 +21,7 @@ const Header = () => {
           </div>
         </div>
         <div className="container mx-auto flex flex-col space-y-4 text-white justify-center align-middle text-center mt-9 relative min-h-[200px]">
-          <h1 className="text-6xl font-dancing">Welcome to Real-estate</h1>
+          <h1 className="text-6xl font-dancing">Welcome to real-estate</h1>
           <p>Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky. T-bone andouille leberkas, pig spare ribs buffalo tail doner landjaeger.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky. T-bone andouille leberkas, pig spare ribs buffalo tail doner landjaeger.</p>
         </div>
       </section>

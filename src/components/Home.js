@@ -3,6 +3,8 @@ import { SiHomeadvisor } from 'react-icons/si';
 import { GiReceiveMoney, GiMagnifyingGlass } from 'react-icons/gi';
 import { BiHelpCircle } from 'react-icons/bi';
 
+import image1 from '../images/jurica-koletic-7YVZYZeITc8-unsplash.jpg'
+
 const Home = () => {
   return (
     <>
@@ -35,8 +37,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="callback-types">
-        <div className="mx-auto container mb-20 mt-20">
+      <section id="types">
+        <div className="mx-auto container mb-20 mt-20 overflow-hidden">
           <h2 className="text-3xl">Search different properties...</h2>
           <p className="mb-10">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.</p>
           <div className="flex columns-3 space-x-6 mb-6">
@@ -118,6 +120,38 @@ const Home = () => {
             </div>
           </div> {/* end of type */}
         </div>
+      </section>
+      <section id="agents" className="bg-[#f8f8f8] p-20">
+          <div className="mx-auto container">
+            <h1 className="text-3xl">Meet our Agents</h1>
+            <p className="mb-8">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf.</p>
+            <div className="flex align-middle justify-center columns-4 space-x-1">
+              <div className="py-5 px-6 text-center bg-white agent">
+                <img className="rounded-[50%] mb-4 mx-auto" height="150" width="150" src={image1} alt=""/>
+                <h3 className="mb-0 text-[#e57677] font-bold">John Doe</h3>
+                <p className="mb-6 font-bold">Agent, Modern Real Estate</p>
+                <p className="mb-3">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin.</p>
+              </div>
+              <div className="py-5 px-6 text-center bg-white agent">
+                <img className="rounded-[50%] mb-4 mx-auto" height="150" width="150" src={image1} alt=""/>
+                <h3 className="mb-0 text-[#e57677] font-bold">John Doe</h3>
+                <p className="mb-6 font-bold">Agent, Modern Real Estate</p>
+                <p className="mb-3">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin.</p>
+              </div>
+              <div className="py-5 px-6 text-center bg-white agent">
+                <img className="rounded-[50%] mb-4 mx-auto" height="150" width="150" src={image1} alt=""/>
+                <h3 className="mb-0 text-[#e57677] font-bold">John Doe</h3>
+                <p className="mb-6 font-bold">Agent, Modern Real Estate</p>
+                <p className="mb-3">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin.</p>
+              </div>
+              <div className="py-5 px-6 text-center bg-white agent">
+                <img className="rounded-[50%] mb-4 mx-auto" height="150" width="150" src={image1} alt=""/>
+                <h3 className="mb-0 text-[#e57677] font-bold">John Doe</h3>
+                <p className="mb-6 font-bold">Agent, Modern Real Estate</p>
+                <p className="mb-3">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin.</p>
+              </div>
+            </div>
+          </div>
       </section>
     </>
   )

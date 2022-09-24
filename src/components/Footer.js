@@ -12,6 +12,9 @@ from 'react-icons/ai';
 const Footer = () => {
   return (
     <>
+      <section id="clients">
+
+      </section>
       <section id="footer" className="bg-lightBlack text-white">
         <div className="container mx-auto flex justify-between align-middle py-8 space-x-6">
           <div className="min-w-[25%]">

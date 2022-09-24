@@ -90,8 +90,15 @@ a {
     transition: 0.2s;
 }
 
+.agent {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
 .hero-boxes:hover,
-.hero-boxes2:hover {
+.hero-boxes2:hover,
+.agent:hover {
     -webkit-box-shadow: 0 70px 70px rgb(0 0 0 / 20%);
     box-shadow: 0 70px 70px rgb(0 0 0 / 20%);
     -webkit-transform: translate(0,-10px);
