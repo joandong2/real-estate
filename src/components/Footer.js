@@ -12,8 +12,17 @@ from 'react-icons/ai';
 const Footer = () => {
   return (
     <>
-      <section id="clients">
-
+      <section id="clients" className="border-t-[1px]">
+        <div className="mx-auto container p-10">
+          <div className="flex columns-6 space-x-5 gap-32 algin-middle justify-between">
+            <p>Company1</p>
+            <p className="font-dancing">Company2</p>
+            <p>Company3</p>
+            <p className="font-dancing">Company4</p>
+            <p>Company5</p>
+            <p className="font-dancing">Company6</p>
+          </div>
+        </div>
       </section>
       <section id="footer" className="bg-lightBlack text-white">
         <div className="container mx-auto flex justify-between align-middle py-8 space-x-6">

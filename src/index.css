@@ -24,7 +24,8 @@ a {
 }
 
 #header,
-#callback1 {
+#callback1,
+#callback2 {
     min-height: 400px;
     position: relative;
 }
@@ -108,6 +109,19 @@ a {
 
 .custom-img {
     background-image: url("./images/francesca-tosolini-XcVm8mn7NUM-unsplash.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.custom-img2 {
+    background-image: url("./images/house-1836070_1280.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
