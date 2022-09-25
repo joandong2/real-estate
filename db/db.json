@@ -22,6 +22,7 @@
         "name": "John Oblenda",
         "email": "johnoblenda@gmail.com",
         "address": "New Jersey",
+        "phone": 9083838881,
         "profile-picture": ""
       },
       {
@@ -29,6 +30,7 @@
         "name": "Joanne Oblenda",
         "email": "joanneoblenda@gmail.com",
         "address": "New Jersey",
+        "phone": 9083838881,
         "profile-picture": ""
       }
     ]

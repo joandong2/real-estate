@@ -1,16 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { SiHomeadvisor } from 'react-icons/si';
 import { GiReceiveMoney, GiMagnifyingGlass } from 'react-icons/gi';
 import { BiHelpCircle } from 'react-icons/bi';
 
 import image1 from '../images/jurica-koletic-7YVZYZeITc8-unsplash.jpg'
+import {
+  useGetPropertiesQuery
+} from '../services/propertiesApi'
+import PropertyLists from './PropertyLists';
 
 const Home: React.FC = () => {
+  const {
+    data,
+    error, 
+    isLoading,
+    isFetching,
+    isSuccess
+  } = useGetPropertiesQuery();
+
+  //console.log('data', data)
+
   return (
     <>
       <section id="featured-homes" className="bg-white">
         <div className="mx-auto container px-40 py-40">
           <h2>Featured Homes</h2>
+          <PropertyLists properties={data} />
         </div>
       </section>
       <section id="callback1" className="h-screen mb-12 bg-fixed bg-center bg-cover custom-img max-h-[200px]">
