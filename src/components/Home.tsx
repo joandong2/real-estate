@@ -1,57 +1,50 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { SiHomeadvisor } from 'react-icons/si';
 import { GiReceiveMoney, GiMagnifyingGlass } from 'react-icons/gi';
 import { BiHelpCircle } from 'react-icons/bi';
-
 import image1 from '../images/jurica-koletic-7YVZYZeITc8-unsplash.jpg'
+
 import {
   useGetPropertiesQuery
 } from '../services/propertiesApi'
 import PropertyLists from './PropertyLists';
 
+import {
+  useGetAgentsQuery
+} from '../services/agentsApi'
+import AgentLists from './AgentLists';
+
+// home-section
+import Callback1 from './home-sections/Callback1';
+
 const Home: React.FC = () => {
+  //properties
   const {
-    data,
-    error, 
-    isLoading,
-    isFetching,
-    isSuccess
+    data : propertyLists,
+    // error, 
+    // isLoading,
+    // isFetching,
+    // isSuccess
   } = useGetPropertiesQuery();
 
-  //console.log('data', data)
+  //agents
+  const {
+    data : agentLists,
+    // error, 
+    // isLoading,
+    // isFetching,
+    // isSuccess
+  } = useGetAgentsQuery();
 
   return (
     <>
       <section id="featured-homes" className="bg-white">
         <div className="mx-auto container px-40 py-40">
           <h2>Featured Homes</h2>
-          <PropertyLists properties={data} />
+          <PropertyLists properties={propertyLists} />
         </div>
       </section>
-      <section id="callback1" className="h-screen mb-12 bg-fixed bg-center bg-cover custom-img max-h-[200px]">
-        <div className="mx-auto container">
-        <div className="overlay-light"></div>
-          <h2 className="text-3xl text-white pt-20 relative">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.</h2>
-          <div className="mx-auto container columns-4 flex justify-center align-middle space-x-1 mt-[50px] mb-[50px] z-10 relative">
-              <div className="flex flex-col text-center align-middle justify-center hero-boxes2 px-20 py-5 text-white">
-                <GiMagnifyingGlass className="text-6xl w-full mb-3"/>
-                <h3 className="mb-0">Looking to Buy</h3>
-              </div>
-              <div className="flex flex-col text-center align-middle justify-center hero-boxes2 px-20 py-5 text-white">
-                <GiReceiveMoney className="text-6xl w-full mb-3"/>
-                <h3 className="mb-0">Sell your home</h3>
-              </div>
-              <div className="flex flex-col text-center align-middle justify-center hero-boxes2 px-20 py-5 text-white">
-                <SiHomeadvisor className="text-6xl w-full mb-3"/>
-                <h3 className="mb-0">Rent A Place</h3>
-              </div>
-              <div className="flex flex-col text-center align-middle justify-center hero-boxes2 px-20 py-5 text-white">
-                <BiHelpCircle className="text-6xl w-full mb-3"/>
-                <h3 className="mb-0">Need Help?</h3>
-              </div>
-          </div>
-        </div>
-      </section>
+      <Callback1 />
       <section id="types">
         <div className="mx-auto container mb-20 mt-20 overflow-hidden">
           <h2 className="text-3xl">Search different properties...</h2>
@@ -169,6 +162,7 @@ const Home: React.FC = () => {
                 <p className="mb-6 font-bold">Agent, Modern Real Estate</p>
                 <p className="mb-3">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin.</p>
               </div>
+              <AgentLists agents={agentLists} />
             </div>
           </div>
       </section>
