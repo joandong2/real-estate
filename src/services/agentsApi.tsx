@@ -15,12 +15,16 @@ export const agentsApi = createApi({
             //transformResponse: res => res.sort((a, b) => b.id - a.id), 
             providesTags: ['Agent']
         }),
+        getAgent: builder.query<Agent, string>({
+            query: (id) => `/agents/${id}`,
+            providesTags: ['Agent']
+        }),
     })
 })
 
 export const { 
     useGetAgentsQuery,
-    // useContactQuery,
+    useGetAgentQuery,
     // useAddContactMutation,
     // useUpdateContactMutation,
     // useDeleteContactMutation

@@ -4,5 +4,6 @@ export interface Agent {
     "email" : string,
     "address" : string,
     "phone" : number,
-    "profile-picture" : string
+    "profile" : string,
+    "company": string
 }

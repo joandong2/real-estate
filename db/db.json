@@ -23,15 +23,35 @@
         "email": "johnoblenda@gmail.com",
         "address": "New Jersey",
         "phone": 9083838881,
-        "profile-picture": ""
+        "profile": "https://picsum.photos/150",
+        "company": "Modern Era"
       },
       {
         "id": "2",
         "name": "Joanne Oblenda",
         "email": "joanneoblenda@gmail.com",
         "address": "New Jersey",
-        "phone": 9083838881,
-        "profile-picture": ""
+        "phone": 9083838884,
+        "profile": "https://picsum.photos/150",
+        "company": "Top Realtors"
+      },
+      {
+        "id": "3",
+        "name": "Guile Oblenda",
+        "email": "guileoblenda@gmail.com",
+        "address": "New Jersey",
+        "phone": 9083838883,
+        "profile": "https://picsum.photos/150",
+        "company": "Top Realtors"
+      },
+      {
+        "id": "4",
+        "name": "Olivia Oblenda",
+        "email": "oliviaoblenda@gmail.com",
+        "address": "New Jersey",
+        "phone": 9083838882,
+        "profile": "https://picsum.photos/150",
+        "company": "Gold Homes"
       }
     ]
   }

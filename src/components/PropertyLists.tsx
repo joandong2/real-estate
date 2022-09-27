@@ -8,6 +8,7 @@ interface Props {
 const PropertyLists: React.FC<Props> = ({ properties }) => {
 
     console.log('data props', properties)
+    // const { data, error, isLoading } = useGetPokemonByNameQuery('bulbasaur')
 
     return (
         <>
