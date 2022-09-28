@@ -10,10 +10,114 @@
         "garage": "1",
         "square-foot": "5400",
         "year-built": "2016",
-        "address": "501 Brickell Key Dr STE 400, Miami, FL 33131, USA",
+        "address": "501 Brickell Key Dr STE 400, Miami, FL 33131",
         "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
-        "image": "",
-        "agent": "1"
+        "profile": "",
+        "tagline": "House in a beautiful neighborhood",
+        "agent": "1",
+        "featured": false
+      }, 
+      {
+        "id": "2",
+        "type": "multi-family",
+        "status": "for-sale",
+        "price": "300000",
+        "bedrooms": "4",
+        "bathrooms": "1",
+        "garage": "1",
+        "square-foot": "2300",
+        "year-built": "2012",
+        "address": "3411 Harriet St, Inkster, MI 48141",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+        "profile": "",
+        "tagline": "Beautiful House",
+        "agent": "1",
+        "featured": true
+      },
+      {
+        "id": "3",
+        "type": "single-family",
+        "status": "for-sale",
+        "price": "500000",
+        "bedrooms": "4",
+        "bathrooms": "2",
+        "garage": "1",
+        "square-foot": "2300",
+        "year-built": "2012",
+        "address": "2897 Hopewell Church Rd, Ellaville, GA 31806",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+        "profile": "",
+        "tagline": "House on the bay",
+        "agent": "1",
+        "featured": true
+      },
+      {
+        "id": "4",
+        "type": "single-family",
+        "status": "for-sale",
+        "price": "580000",
+        "bedrooms": "4",
+        "bathrooms": "2",
+        "garage": "1",
+        "square-foot": "2300",
+        "year-built": "2012",
+        "address": "2101 S Meridian Dr, Apache Junction, AZ 85220",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+        "profile": "",
+        "tagline": "Awesome House",
+        "agent": "1",
+        "featured": true
+      },
+      {
+        "id": "5",
+        "type": "single-family",
+        "status": "for-sale",
+        "price": "300000",
+        "bedrooms": "4",
+        "bathrooms": "2",
+        "garage": "1",
+        "square-foot": "2300",
+        "year-built": "2012",
+        "address": "308 South Ave #2Osceola, WI 54020",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+        "profile": "",
+        "tagline": "Newly Renovated House",
+        "agent": "2",
+        "featured": true
+      },
+      {
+        "id": "6",
+        "type": "apartment",
+        "status": "for-rent",
+        "price": "2800",
+        "bedrooms": "2",
+        "bathrooms": "1",
+        "garage": "0",
+        "square-foot": "230",
+        "year-built": "2012",
+        "address": "5076 William St Lancaster, NY 14086",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+        "profile": "",
+        "tagline": "Affordable Apartment",
+        "agent": "4",
+        "featured": false
+      },
+      {
+        "id": "7",
+        "type": "single-family",
+        "status": "for-sale",
+        "price": "450000",
+        "bedrooms": "4",
+        "bathrooms": "2",
+        "garage": "1",
+        "square-foot": "2300",
+        "year-built": "2022",
+        "address": "4700 Charter Ln Mukilteo, WA 98275",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+        "profile": "",
+        "tagline": "Awesome Single Family House",
+        "agent": "2",
+        "featured": true
       }
     ],
     "agents": [
@@ -23,7 +127,7 @@
         "email": "johnoblenda@gmail.com",
         "address": "New Jersey",
         "phone": 9083838881,
-        "profile": "https://picsum.photos/150",
+        "profile": "https://picsum.photos/id/1005/150/150",
         "company": "Modern Era"
       },
       {
@@ -32,7 +136,7 @@
         "email": "joanneoblenda@gmail.com",
         "address": "New Jersey",
         "phone": 9083838884,
-        "profile": "https://picsum.photos/150",
+        "profile": "https://picsum.photos/id/1027/150/150",
         "company": "Top Realtors"
       },
       {
@@ -41,7 +145,7 @@
         "email": "guileoblenda@gmail.com",
         "address": "New Jersey",
         "phone": 9083838883,
-        "profile": "https://picsum.photos/150",
+        "profile": "https://picsum.photos/id/338/150/150",
         "company": "Top Realtors"
       },
       {
@@ -50,7 +154,7 @@
         "email": "oliviaoblenda@gmail.com",
         "address": "New Jersey",
         "phone": 9083838882,
-        "profile": "https://picsum.photos/150",
+        "profile": "https://picsum.photos/id/399/150/150",
         "company": "Gold Homes"
       }
     ]
