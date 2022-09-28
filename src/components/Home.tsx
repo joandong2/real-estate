@@ -23,7 +23,7 @@ const Home: React.FC = () => {
   return (
     <>
       <section id="featured-homes" className="bg-white">
-        <div className="mx-auto container px-40 py-40">
+        <div className="mx-auto container px-10 py-20">
           <h2>Featured Homes</h2>
           <PropertyLists properties={propertyLists} />
         </div>
