@@ -23,8 +23,9 @@ const Home: React.FC = () => {
   return (
     <>
       <section id="featured-homes" className="bg-white">
-        <div className="mx-auto container px-10 py-20">
-          <h2>Featured Homes</h2>
+        <div className="mx-auto container px-5 py-20">
+          <h2 className="text-2xl font-bold">Latest & Featured Properties</h2>
+          <p className="mb-8">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.</p>
           <PropertyLists properties={propertyLists} />
         </div>
       </section>

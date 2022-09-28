@@ -154,3 +154,8 @@ a {
 .studio {background-image: url("./images/bedroom-527645_640.jpg");}
 .condo {background-image: url("./images/living-room-2155353_640.jpg");}
 .lot {background-image: url("./images/lawn-768316_640.jpg");}
+
+.slick-slider .slick-prev:before, 
+.slick-slider .slick-next:before {
+    color: #000;
+}

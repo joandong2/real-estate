@@ -10,6 +10,8 @@ export interface Property {
     "year-built": number,
     "address": string,
     "description": string,
-    "image": string,
-    "agent": number
+    "profile": string,
+    "tagline": string,
+    "agent": number,
+    "featured": boolean
 }
