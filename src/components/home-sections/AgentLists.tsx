@@ -18,7 +18,7 @@ const AgentLists: React.FC = () => {
 
     return (
         <>
-            <section id="agents" className="bg-[#f8f8f8] p-32">
+            <section id="agents" className="bg-[#ffffff] p-32">
                 <div className="mx-auto container">
                     <h2 className="text-3xl">Meet our Agents</h2>
                     <p className="mb-8">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf.</p>
