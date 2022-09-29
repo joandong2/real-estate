@@ -20,7 +20,7 @@ const AgentLists: React.FC = () => {
         <>
             <section id="agents" className="bg-[#f8f8f8] p-32">
                 <div className="mx-auto container">
-                    <h1 className="text-3xl">Meet our Agents</h1>
+                    <h2 className="text-3xl">Meet our Agents</h2>
                     <p className="mb-8">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf.</p>
                     <div className="flex align-middle justify-center columns-4 space-x-1">
                         { isSuccess ? 

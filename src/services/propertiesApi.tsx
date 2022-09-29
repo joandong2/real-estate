@@ -4,15 +4,14 @@ import { Property } from '../models/property'
 export const propertiesApi = createApi({
     reducerPath: "properties", 
     baseQuery: fetchBaseQuery({baseUrl: "http://localhost:3006/"}), // all request starts with this url
-    tagTypes: ['Property'], // auto fetching if theres a change in data
+    tagTypes: ['Property'], 
     endpoints:(builder) => ({
-        // contacts should be the variable in the db object
-        // contact + query = ContactsQuery Hook
-        // returns a contacts array which is Contact[]
-        // void mean no parameters needed
         getProperties: builder.query<Property[], void>({ 
-            query: () => '/properties', // endpoint
-            //transformResponse: res => res.sort((a, b) => b.id - a.id), 
+            query: () => '/properties',
+            providesTags: ['Property']
+        }),
+        getProperty: builder.query<Property, any>({ 
+            query: (id) => `/properties/${id}`, 
             providesTags: ['Property']
         }),
         // ts, first is the return, second is the parameter we passed
@@ -48,7 +47,7 @@ export const propertiesApi = createApi({
 
 export const { 
     useGetPropertiesQuery,
-    // useContactQuery,
+    useGetPropertyQuery,
     // useAddContactMutation,
     // useUpdateContactMutation,
     // useDeleteContactMutation

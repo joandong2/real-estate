@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         <div className="overlay"></div>
         <div className="container mx-auto flex justify-between pt-4 mb-10 relative flex-col md:flex-row">
           <div>
-            <h1 className="font-dancing text-white text-2xl">real-estate</h1>
+            <h1 className="font-dancing text-white text-2xl"><a href="/" className="no-underline text-white">real-estate</a></h1>
           </div>
           <div className="flex justify-between align-middle">
             <ul className="flex space-x-4 align-middle mt-4">

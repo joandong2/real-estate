@@ -6,7 +6,7 @@ import { BiHelpCircle } from 'react-icons/bi';
 const Callback2 = () => {
   return (
     <>
-        <section id="callback2" className="h-screen mb-12 bg-fixed bg-center bg-cover custom-img2 max-h-[200px]">
+        <section id="callback2" className="h-screen bg-fixed bg-center bg-cover custom-img2 max-h-[200px]">
         <div className="mx-auto container">
         <div className="overlay-light"></div>
           <h2 className="text-3xl text-white pt-20 relative">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.</h2>

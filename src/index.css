@@ -159,3 +159,7 @@ a {
 .slick-slider .slick-next:before {
     color: #000;
 }
+
+.featured-box:hover .overlay-light2 {
+    opacity: 0;
+}

@@ -18,7 +18,7 @@ function App() {
 
         <Route path="/">
           <Route index element={<Home/>} />
-          <Route path="property/:postId" element={<SingleProperty />} />
+          <Route path="property/:id" element={<SingleProperty />} />
         </Route>
 
         <Route path="*" element={<Navigate to="/" replace />} />
