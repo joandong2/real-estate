@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { GoLocation } from 'react-icons/go';
 import { 
   AiOutlinePhone, 
@@ -8,6 +7,7 @@ import {
   AiFillTwitterCircle, 
   AiFillInstagram } 
 from 'react-icons/ai';
+import Newsletter from './Newsletter';
 
 const Footer: React.FC = () => {
   return (
@@ -41,6 +41,8 @@ const Footer: React.FC = () => {
           </div>
           <div className="min-w-[50%]">
             <h3>Newsletter</h3>
+            <p>Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky. T-bone andouille leberkas, pig spare ribs buffalo tail doner landjaeger.</p>
+            <Newsletter />
           </div>
         </div>
       </section>

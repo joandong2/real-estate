@@ -164,3 +164,7 @@ a {
 .featured-box:hover .overlay-light2 {
     opacity: 0;
 }
+
+.agent {
+    background-color: #fafafa;
+}

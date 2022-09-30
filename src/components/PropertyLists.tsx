@@ -8,7 +8,7 @@ import {
 
 import { BiBed } from 'react-icons/bi';
 import { TbRuler2 } from 'react-icons/tb';
-import { FaShower, FaRulerCombined, FaHome } from 'react-icons/fa'
+import { FaShower } from 'react-icons/fa'
 
 interface Props {
     properties: Property[] | undefined;
@@ -18,15 +18,17 @@ const PropertyLists: React.FC<Props> = ({ properties }) => {
 
     // console.log('data props', properties)
     // const { data, error, isLoading } = useGetAgentQuery('2')
-
     // console.log('agent propi', data)
+    
     var settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       arrows: true,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 8000,
     };
 
     return (
@@ -59,7 +61,7 @@ const PropertyLists: React.FC<Props> = ({ properties }) => {
                               <p><FaShower className="inline-block"/> {property.bathrooms}</p>
                               <p><TbRuler2 className="inline-block"/> {property['square-foot']} Sq Ft</p>
                             </div>
-                            <p className="text-xs uppercase mt-3"><FaHome className="inline-block"/> {property.type.replace(/-/g, ' ')}</p>
+                            <p className="text-xs font-semibold uppercase mt-3">{property.type.replace(/-/g, ' ')}</p>
                         </div>
                       </div>
                     ) : null
