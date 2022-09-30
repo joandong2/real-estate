@@ -1,4 +1,3 @@
-import { type } from '@testing-library/user-event/dist/type';
 import React from 'react'
 import { AiOutlineCalendar, AiTwotoneCar } from 'react-icons/ai';
 import { BiBed, BiMapAlt } from 'react-icons/bi';
@@ -20,8 +19,6 @@ const SingleProperty: React.FC = () => {
     isFetching,
     isSuccess
   } = useGetPropertyQuery(id);
-
-  console.log(data);
 
   return (
     <>

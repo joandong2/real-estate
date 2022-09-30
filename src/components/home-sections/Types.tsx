@@ -9,7 +9,7 @@ const Types: React.FC = () => {
           <p className="mb-10">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.</p>
           <div className="flex columns-3 space-x-6 mb-6">
             <div className="min-w-[23%] min-h-full">
-              <a href="/" className="no-underline">
+              <a href="/property-type/apartments" className="no-underline">
                 <div className="flex flex-col align-middle min-h-full justify-center py-32 relative whole-bg apartment">
                     <p className="text-white text-2xl no-underline uppercase z-10">Apartments</p>
                     <p className="text-white text-sm no-underline z-10">29 Properties</p>
@@ -18,7 +18,7 @@ const Types: React.FC = () => {
               </a>
             </div>
             <div className="min-w-[23%] min-h-full">
-              <a href="/" className="no-underline">
+              <a href="/property-type/multi-family" className="no-underline">
                 <div className="flex flex-col align-middle min-h-full justify-center p-4 relative whole-bg multi">
                     <p className="text-white text-2xl no-underline uppercase z-10">Multi Family Home</p>
                     <p className="text-white textsm no-underline z-10">29 Properties</p>
@@ -27,7 +27,7 @@ const Types: React.FC = () => {
               </a>
             </div>
             <div className="min-w-[50%] min-h-full">
-              <a href="/" className="no-underline">
+              <a href="/property-type/single-family" className="no-underline">
                 <div className="flex flex-col align-middle min-h-full justify-center p-4 relative whole-bg single">
                     <p className="text-white text-2xl no-underline uppercase z-10">Single Family Home</p>
                     <p className="text-white textsm no-underline z-10">29 Properties</p>
@@ -38,7 +38,7 @@ const Types: React.FC = () => {
           </div> {/* end of type */}
           <div className="flex columns-3 space-x-6 mb-6">
             <div className="min-w-[50%] min-h-full relative">
-              <a href="/" className="no-underline">
+              <a href="/property-type/studio" className="no-underline">
                 <div className="flex flex-col align-middle min-h-full justify-center py-32 relative whole-bg studio">
                     <p className="text-white text-2xl no-underline uppercase z-10">Studio</p>
                     <p className="text-white textsm no-underline z-10">29 Properties</p>
@@ -47,7 +47,7 @@ const Types: React.FC = () => {
               </a>
             </div>
             <div className="min-w-[23%] min-h-full relative">
-              <a href="/" className="no-underline">
+              <a href="/property-type/condo" className="no-underline">
                 <div className="flex flex-col align-middle min-h-full justify-center p-4 relative whole-bg condo">
                     <p className="text-white text-2xl no-underline uppercase z-10">Condo</p>
                     <p className="text-white textsm no-underline z-10">29 Properties</p>
@@ -56,7 +56,7 @@ const Types: React.FC = () => {
               </a>
             </div>
             <div className="min-w-[23%] min-h-full">
-              <a href="/" className="no-underline">
+              <a href="/property-type/office" className="no-underline">
                 <div className="flex flex-col align-middle min-h-full justify-center p-4 relative whole-bg office">
                     <p className="text-white text-2xl no-underline uppercase z-10">Office</p>
                     <p className="text-white textsm no-underline z-10">29 Properties</p>

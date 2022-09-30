@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Home from './components/Home'
 import { Routes, Route, Navigate } from 'react-router-dom';
 import SingleProperty from './components/SingleProperty';
+import PropertyLists from './components/PropertyLists';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/">
           <Route index element={<Home/>} />
           <Route path="property/:id" element={<SingleProperty />} />
+          <Route path="property-type/:name" element={<PropertyLists />} /> 
         </Route>
 
         <Route path="*" element={<Navigate to="/" replace />} />

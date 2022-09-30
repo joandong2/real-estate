@@ -1,77 +1,67 @@
 import React from 'react'
-import { Property } from '../models/property'
-import Slider from "react-slick"
-
 import {
-    useGetAgentQuery
-} from '../services/agentsApi'
+    useGetPropertiesQuery
+  } from '../services/propertiesApi'
+import { useParams } from "react-router-dom";
+import { Property } from '../models/property';
 
-import { BiBed } from 'react-icons/bi';
-import { TbRuler2 } from 'react-icons/tb';
-import { FaShower } from 'react-icons/fa'
-
-interface Props {
-    properties: Property[] | undefined;
+type Params = {
+    name: string
 }
 
-const PropertyLists: React.FC<Props> = ({ properties }) => {
+const PropertyLists: React.FC = () => {
+    let { name } = useParams<keyof Params>() as Params; // workaround
 
-    // console.log('data props', properties)
-    // const { data, error, isLoading } = useGetAgentQuery('2')
-    // console.log('agent propi', data)
+    const {
+        data : propertyLists,
+        error, 
+        isLoading,
+        isSuccess
+      } = useGetPropertiesQuery(undefined, {
+            selectFromResult: ({data, error, isLoading, isSuccess}) => ({
+                data: data?.filter((res: Property) => res.type === name),
+                error,
+                isLoading,
+                isSuccess
+            })
+      });
     
-    var settings = {
-      dots: false,
-      infinite: true,
-      arrows: true,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 8000,
-    };
+    console.log('name', name)
+    console.log('prop', propertyLists);
 
     return (
         <>
-          <Slider {...settings}>
-            {
-              properties ?  
-                (
-                  properties.map((property,index) => (
-                    property.featured ? (
-                      <div key={property.id} className="p-2">
-                        <div className="featured-box relative">
-                            <a href={`/property/${property.id}`}>
-                              <img className="" src={`/assets/properties/${property.profile}`} alt=""/>
-                              <div className="overlay-light2"></div>
-                              <div className="absolute top-2">
-                                <div className="flex flex-col align-start justify-between">
-                                  <div className="flex justify-between p-3 space-x-2">
-                                    <p className="border bg-red-500 px-1 text-white uppercase text-xs border-red-500">Featured</p>
-                                    <p className="border bg-black text-white px-1 border-black text-xs uppercase">{property.status.replace(/-/g, ' ')}</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </a>
+            <section id="property-listing__slider">
+                <div className="mx-auto container mb-8">
+                    <div className="flex">
+                        <h1 className="text-2xl capitalize">{name.replace(/-/g, ' ')}</h1>
+                    </div>
+                    <div className="flex columns-2">
+                        <div className="w-1/4 text-left">
+                            right
                         </div>
-                        <div className="flex flex-col justify-center align-middle mt-6">
-                            <p className="font-semibold mb-2">{property.tagline}</p>
-                            <div className="flex flex-wrap align-middle justify-center space-x-4 mb-1">
-                              <p><BiBed className="inline-block"/> {property.bedrooms}</p>
-                              <p><FaShower className="inline-block"/> {property.bathrooms}</p>
-                              <p><TbRuler2 className="inline-block"/> {property['square-foot']} Sq Ft</p>
-                            </div>
-                            <p className="text-xs font-semibold uppercase mt-3">{property.type.replace(/-/g, ' ')}</p>
+                        <div className="w-3/4 text-left">
+                            {isSuccess ? 
+                                (
+                                    propertyLists?.map((property) => (
+                                        <div key={property.id} className="flex columns-2 mb-10">
+                                            <div className="">
+                                                <img width="255" height="190" src={`/assets/properties/${property.profile}`} alt=""/>
+                                            </div>
+                                            <div className="p-4 bg-white w-full">
+                                                {property.tagline}
+                                            </div>
+                                        </div>
+                                    ))
+                                ) : 
+                                (
+                                    <h3 className="">No results found..</h3>
+                                )
+                            }
                         </div>
-                      </div>
-                    ) : null
-                  ))
-                ) : 
-                (
-                  <p>Slides not available...</p>
-                )
-            }
-          </Slider>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }

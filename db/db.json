@@ -87,7 +87,7 @@
       },
       {
         "id": "6",
-        "type": "apartment",
+        "type": "apartments",
         "status": "for-rent",
         "price": "2800",
         "bedrooms": "2",

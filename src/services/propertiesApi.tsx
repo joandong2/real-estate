@@ -10,6 +10,13 @@ export const propertiesApi = createApi({
             query: () => '/properties',
             providesTags: ['Property']
         }),
+        // getPropertiesByType: builder.query<Property[], any>({ 
+        //     query: (type) => `/properties/${type}`,
+        //     providesTags: (result = [], error, arg) => [
+        //         'Property',
+        //         ...result.map(({ type }) => ({ type: 'Property', typ }))
+        //       ]
+        // }),
         getProperty: builder.query<Property, any>({ 
             query: (id) => `/properties/${id}`, 
             providesTags: ['Property']
