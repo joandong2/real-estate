@@ -12,10 +12,8 @@ export const propertiesApi = createApi({
         }),
         // getPropertiesByType: builder.query<Property[], any>({ 
         //     query: (type) => `/properties/${type}`,
-        //     providesTags: (result = [], error, arg) => [
-        //         'Property',
-        //         ...result.map(({ type }) => ({ type: 'Property', typ }))
-        //       ]
+        //     transformResponse: res => data: data?.filter((res: Property) => res.type === name),
+        //     providesTags: ['Property']
         // }),
         getProperty: builder.query<Property, any>({ 
             query: (id) => `/properties/${id}`, 
