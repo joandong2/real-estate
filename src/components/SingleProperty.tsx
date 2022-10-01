@@ -33,7 +33,7 @@ const SingleProperty: React.FC = () => {
               </div>
               <div className="flex flex-col text-right">
                 <p className="text-3xl font-semibold mb-2">$ {data.price.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")}</p>
-                <p className="text-lg font-light font-semibold"><GiPencilRuler className="inline-block"/> {data['square-foot']} sq. ft</p>
+                <p className="text-lg font-light"><GiPencilRuler className="inline-block"/> {data['square-foot']} sq. ft</p>
               </div>
             </div>
             <div className="mb-10">
