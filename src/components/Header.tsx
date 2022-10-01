@@ -14,9 +14,9 @@ const Header: React.FC = () => {
           <div className="flex justify-between align-middle">
             <ul className="flex space-x-4 align-middle">
               <a className="no-underline text-white py-5 px-3 hover:bg-white/[.30]" href="/">Home</a>
-              <a className="no-underline text-white py-5 px-3 hover:bg-white/[.30]" href="/">Listing</a>
-              <a className="no-underline text-white py-5 px-3 hover:bg-white/[.30]" href="/">About</a>
-              <a className="no-underline text-white py-5 px-3 hover:bg-white/[.30]" href="/">Contact Us</a>
+              <a className="no-underline text-white py-5 px-3 hover:bg-white/[.30]" href="/property-type">Listing</a>
+              <a className="no-underline text-white py-5 px-3 hover:bg-white/[.30]" href="/about">About</a>
+              <a className="no-underline text-white py-5 px-3 hover:bg-white/[.30]" href="/contact">Contact Us</a>
             </ul>
             {/* <button className="ml-10 border-solid text-white">Create A Listing</button> */}
           </div>

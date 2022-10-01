@@ -22,22 +22,22 @@ const PropertyLists: React.FC = () => {
         isSuccess
       } = useGetPropertiesQuery(undefined, {
             selectFromResult: ({data, error, isLoading, isSuccess}) => ({
-                data: data?.filter((res: Property) => res.type === name),
+                data: (name === 'all' || name === null || name === '' || name === undefined) ? data : data?.filter((res: Property) => res.type === name),
                 error,
                 isLoading,
                 isSuccess
             })
       });
     
-    console.log('name', name)
-    console.log('prop', propertyLists);
+    //console.log('name', name)
+    //console.log('prop', propertyLists);
 
     return (
         <>
             <section id="property-listing__slider">
                 <div className="mx-auto container mb-8">
                     <div className="flex">
-                        <h1 className="text-2xl capitalize">{name.replace(/-/g, ' ')}</h1>
+                        <h1 className="text-2xl capitalize">{name ? name.replace(/-/g, ' ') : 'All Listing'}</h1>
                     </div>
                     <div className="flex columns-2 space-x-8">
                         <div className="w-1/4 text-left">
