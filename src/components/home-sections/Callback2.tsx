@@ -2,31 +2,23 @@ import React from 'react'
 import { SiHomeadvisor } from 'react-icons/si';
 import { GiReceiveMoney, GiMagnifyingGlass } from 'react-icons/gi';
 import { BiHelpCircle } from 'react-icons/bi';
+import InquiryFormHome from '../InquiryFormHome';
 
 const Callback2 = () => {
   return (
     <>
-        <section id="callback2" className="h-screen bg-fixed bg-center bg-cover custom-img2 max-h-[200px]">
-        <div className="mx-auto container">
-        <div className="overlay-light"></div>
-          <h2 className="text-3xl text-white pt-20 relative">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.</h2>
-          <div className="mx-auto container columns-4 flex justify-center align-middle space-x-1 mt-[50px] mb-[50px] z-10 relative">
-              <div className="flex flex-col text-center align-middle justify-center hero-boxes2 px-20 py-5 text-white">
-                <GiMagnifyingGlass className="text-6xl w-full mb-3"/>
-                <h3 className="mb-0">Looking to Buy</h3>
-              </div>
-              <div className="flex flex-col text-center align-middle justify-center hero-boxes2 px-20 py-5 text-white">
-                <GiReceiveMoney className="text-6xl w-full mb-3"/>
-                <h3 className="mb-0">Sell your home</h3>
-              </div>
-              <div className="flex flex-col text-center align-middle justify-center hero-boxes2 px-20 py-5 text-white">
-                <SiHomeadvisor className="text-6xl w-full mb-3"/>
-                <h3 className="mb-0">Rent A Place</h3>
-              </div>
-              <div className="flex flex-col text-center align-middle justify-center hero-boxes2 px-20 py-5 text-white">
-                <BiHelpCircle className="text-6xl w-full mb-3"/>
-                <h3 className="mb-0">Need Help?</h3>
-              </div>
+        <section id="callback2" className="h-screen bg-fixed bg-center bg-cover custom-img2 p-20">
+        <div className="mx-auto container text-left">
+          <div className="overlay-light"></div>
+          <div className="flex justify-between align-middle z-10">
+            <div className="w-[50%] relative">
+              <h2 className="text-2xl text-white relative">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.</h2>
+              <div className="border-t-[1px] bg-gray-400 w-[100%] h-[1px] mb-8"></div>
+              <p className="text-white relative">Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.Bacon ipsum dolor amet ball tip chislic beef ribs shankle sirloin meatloaf. Flank tongue turducken chicken tail jerky.</p>
+            </div>
+            <div className="w-[40%] relative p-8 bg-white">
+              <InquiryFormHome />
+            </div>
           </div>
         </div>
       </section>

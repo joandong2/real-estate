@@ -27,9 +27,9 @@ const Newsletter: React.FC = () => {
     <>
       <form onSubmit={onSubmit} className="mt-4">
         <div className="flex space-x-4">
-          <input className="shadow appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" {...register("email")} placeholder="Email address" />
+          <input className="shadow appearance-none w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" {...register("email")} placeholder="Email address" />
           {errors?.email && <p>{errors.email.message}</p>}
-          <input type="submit" value="Submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded focus:outline-none focus:shadow-outline"/>
+          <input type="submit" value="Submit" className="cursor-pointer bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 focus:outline-none focus:shadow-outline"/>
         </div>
       </form>
     </>

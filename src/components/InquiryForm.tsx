@@ -33,7 +33,7 @@ const InquiryForm:React.FC = () => {
         <input className="shadow appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" {...register("lastName")} placeholder="Last Name" />
         {errors?.lastName && <p>{errors.lastName.message}</p>}
         <textarea className="shadow appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline min-h-[100px]" {...register("inquiry")} placeholder="Message"></textarea>
-        <input type="submit" value="Send Message" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"/>
+        <input type="submit" value="Send Message" className="cursor-pointer bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 focus:outline-none focus:shadow-outline"/>
       </form>
     </>
   );
