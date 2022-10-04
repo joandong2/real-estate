@@ -3,11 +3,12 @@ import { Property } from '../models/property'
 
 export const propertiesApi = createApi({
     reducerPath: "properties", 
-    baseQuery: fetchBaseQuery({baseUrl: "http://localhost:3006/"}), // all request starts with this url
+    // baseQuery: fetchBaseQuery({baseUrl: "http://localhost:3006/"}), // all request starts with this url
+    baseQuery: fetchBaseQuery({baseUrl: "https://real-estate-77445-default-rtdb.firebaseio.com/"}),
     tagTypes: ['Property'], 
     endpoints:(builder) => ({
         getProperties: builder.query<Property[], void>({ 
-            query: () => '/properties',
+            query: () => '/properties.json',
             providesTags: ['Property']
         }),
         // getPropertiesByType: builder.query<Property[], any>({ 
@@ -16,7 +17,7 @@ export const propertiesApi = createApi({
         //     providesTags: ['Property']
         // }),
         getProperty: builder.query<Property, any>({ 
-            query: (id) => `/properties/${id}`, 
+            query: (id) => `/properties/${id - 1}/.json`, 
             providesTags: ['Property']
         }),
         // ts, first is the return, second is the parameter we passed

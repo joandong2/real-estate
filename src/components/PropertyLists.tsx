@@ -30,7 +30,7 @@ const PropertyLists: React.FC = () => {
       });
     
     //console.log('name', name)
-    //console.log('prop', propertyLists);
+    console.log('prop', propertyLists);
 
     return (
         <>
